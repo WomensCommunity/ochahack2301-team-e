@@ -1,0 +1,19 @@
+header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  align-items: center;
+  position: fixed;
+}
+
+h1 {
+  margin: 20px;
+  color: #8090C0;
+}
+
+.menu-item {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
