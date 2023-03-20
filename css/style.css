@@ -4,7 +4,7 @@ header {
   height: 100px;
   background-color: white;
   align-items: center;
-  position: fixed;
+  position: sticky
 }
 
 h1 {
