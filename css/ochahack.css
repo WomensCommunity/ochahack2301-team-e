@@ -1,0 +1,67 @@
+/* 
+#8090C0 : 紫
+#FF8882 ：ピンク
+#FFF1E0 : ベージュ 
+*/
+
+/*===========================================================*/
+/* 全体の設定 */
+/*===========================================================*/
+body {
+    margin: 0;
+    padding: 0;
+}
+.main{
+    margin:3%;
+}
+
+/*===========================================================*/
+/* タイトル系 */
+/*===========================================================*/
+.sub-title{
+    color:#8090C0;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 30px 50px 0px 0px;
+    margin-bottom: 30px;
+}
+
+.date{
+    color:#8090C0;
+    font-weight: bold;
+    font-size: 1.0em;
+    border-bottom: #8090C0 3px solid;
+}
+
+/*===========================================================*/
+/* 中身のヘッダー */
+/*===========================================================*/
+.main-header{
+    background-color: #8090C0;
+    text-align: center;
+}
+
+/*===========================================================*/
+/* 中身 */
+/*===========================================================*/
+
+.detail{
+    display: flex;
+    justify-content: space-between;
+}
+.detail-date{
+    width: 300px;
+    color: #8090C0;
+    line-height: 3.0;
+}
+.detail-intro{
+    line-height: 3.0;
+}
+.news-list li{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: #8090C0 3px solid;
+}
+ul{
+    padding: 0;
+}
