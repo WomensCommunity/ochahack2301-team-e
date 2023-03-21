@@ -1,0 +1,29 @@
+/* 
+#8090C0 : 紫
+#FF8882 ：ピンク
+#FFF1E0 : ベージュ 
+*/
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.main{
+    margin:3%;
+}
+
+ul{
+    list-style-type: none;
+    /* background: linear-gradient(#8090C0, #FFF1E0); */
+}
+li{
+    /* margin: 20px 0px 20px 0px; */
+    padding: 20px 0px 20px 0px;
+    border-top: #8090C0 1px solid;
+}
+.sub-title{
+    color:#8090C0;
+    font-weight: bold;
+    font-size: 1.5em;
+}
