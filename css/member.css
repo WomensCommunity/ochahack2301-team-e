@@ -7,11 +7,13 @@
     /*文字を白に*/
     border-radius: 0.5em;
     /*角の丸み*/
+    z-index: -1;
 }
 
 .sub-member-title {
     width: 100%;
     color: #FF8882;
     border-bottom: 4px dashed #FF8882;
-    ;
+    
+    z-index: -1;
 }
