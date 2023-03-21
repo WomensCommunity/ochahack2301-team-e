@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   display: flex;
   width: 100%;
@@ -7,13 +12,198 @@ header {
   position: fixed;
 }
 
-h1 {
+.title {
   margin: 20px;
   color: #8090C0;
 }
 
-.menu-item {
-  list-style: none;
+/*===========================================================*/
+/* SNS アイコン */
+/*===========================================================*/
+
+.sns {
+  position: absolute;
+  right: 100px;
+  text-align: center;
+}
+
+.sns a {
+  margin: 15px;
+  scale: 0.8;
+}
+
+.sns a:hover {
+  opacity: 0.5;
+}
+
+/*===========================================================*/
+/* メニューボタン(3本線が×に) */
+/*===========================================================*/
+.menubtn {
+  position: fixed;
+  z-index: 9999;
+  /*ボタンを最前面に*/
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+}
+
+/*×に変化*/
+.menubtn span {
   display: inline-block;
+  transition: all .4s;
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #8090C0;
+  width: 45%;
+}
+
+.menubtn span:nth-of-type(1) {
+  top: 15px;
+}
+
+.menubtn span:nth-of-type(2) {
+  top: 25px;
+}
+
+.menubtn span:nth-of-type(3) {
+  top: 35px;
+}
+
+.menubtn.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 40%;
+}
+
+.menubtn.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.menubtn.active span:nth-of-type(3) {
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 40%;
+}
+
+/*===========================================================*/
+/* クリックしたらナビが上から下に出現 */
+/*===========================================================*/
+
+/*========= ナビゲーションのためのCSS ===============*/
+
+.g-nav {
+  /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+  position: fixed;
+  z-index: 999;
+  top: -100%;
+  width: 100%;
+  height: 70%;
+  background: linear-gradient(45deg, #8090C0, #FF8882);
+  transition: all 0.6s;
+  opacity: 0.9;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+.g-nav.panelactive {
+  top: 0;
+}
+
+/*横幅が768px以下になった際の指定*/
+@media only screen and (max-width: 599px) {
+
+  #g-nav,
+  #g-nav.panelactive #g-nav-list {
+    width: 100%;
+  }
+}
+
+/*ナビゲーション*/
+.g-nav ul {
+  /*ナビゲーション天地中央揃え*/
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*リストのレイアウト設定*/
+
+.g-nav li {
+  list-style: none;
+  text-align: center;
+}
+
+.g-nav li a {
+  color: black;
+  text-decoration: none;
   padding: 10px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  transition: all .5s;
+}
+
+.g-nav li a:hover {
+  color: #3f3f3f;
+  scale: 1.2;
+}
+
+
+/*===========================================================*/
+/* フッター */
+/*===========================================================*/
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #8090C0;
+  font-size: large;
+}
+
+.contact {
+  color: #FFF1E0;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 30px;
+}
+
+.footer__navi {
+  padding-right: 30px;
+}
+
+.footer__navi li {
+  display: inline-block;
+}
+
+.footer__navi li a {
+  color: #FFF1E0;
+}
+
+.footer__navi li a:hover {
+  color: rgb(197, 192, 192);
+}
+
+.footer__navi li:not(:last-child) {
+  margin-right: 8px;
+}
+
+@media (min-width: 599px) {
+  .md-flex {
+    display: flex;
+  }
+
+  .md-justify-between {
+    justify-content: space-between;
+  }
 }
