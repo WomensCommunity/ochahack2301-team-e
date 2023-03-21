@@ -1,0 +1,17 @@
+.others-title {
+    background: #8090C0;
+    /*背景色*/
+    padding: 0.5em;
+    /*文字周りの余白*/
+    color: white;
+    /*文字を白に*/
+    border-radius: 0.5em;
+    /*角の丸み*/
+}
+
+.sub-others-title {
+    width: 100%;
+    color: #FF8882;
+    border-bottom: 4px dashed #FF8882;
+    ;
+}
