@@ -170,14 +170,11 @@ header {
 
 footer {
   display: flex;
-  left: 0;
-  bottom: 0;
+  justify-content: space-between;
   height: 130px;
-  margin-bottom: 0;
   width: 100%;
   background: #8090C0;
   font-size: large;
-  justify-content: space-between;
 }
 
 .contact {
@@ -190,6 +187,7 @@ footer {
 .footer-right {
   align-items: flex-end;
   display: flex;
+  padding-right: 20px;
 }
 
 .footer__navi li {
@@ -208,6 +206,7 @@ footer {
   margin-right: 8px;
 }
 
+/* 
 @media (min-width: 599px) {
   .md-flex {
     display: flex;
@@ -216,7 +215,7 @@ footer {
   .md-justify-between {
     justify-content: space-between;
   }
-}
+} */
 
 .sub-title {
   text-align: center;
