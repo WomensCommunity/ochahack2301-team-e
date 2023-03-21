@@ -10,7 +10,8 @@ header {
   height: 100px;
   background-color: white;
   align-items: center;
-  position: sticky
+  position: sticky;
+  box-shadow: 0 0 8px gray;
 }
 
 .header-title {
