@@ -12,7 +12,7 @@ header {
   position: sticky
 }
 
-.title {
+.header-title {
   margin: 20px;
   color: #8090C0;
 }
@@ -40,7 +40,7 @@ header {
 /* メニューボタン(3本線が×に) */
 /*===========================================================*/
 .menubtn {
-  position: fixed;
+  position: absolute;
   z-index: 9999;
   /*ボタンを最前面に*/
   top: 20px;

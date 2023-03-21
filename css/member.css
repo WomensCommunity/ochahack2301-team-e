@@ -1,22 +1,17 @@
-
-h1 {
-    background: #8090C0; /*背景色*/
-    padding: 0.5em;/*文字周りの余白*/
-    color: white;/*文字を白に*/
-    border-radius: 0.5em;/*角の丸み*/
+.member-title {
+    background: #8090C0;
+    /*背景色*/
+    padding: 0.5em;
+    /*文字周りの余白*/
+    color: white;
+    /*文字を白に*/
+    border-radius: 0.5em;
+    /*角の丸み*/
 }
-h2 {
-    position: relative;
-    color:#FF8882;
-  }
-  
-h2:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
+
+.sub-member-title {
     width: 100%;
-    height: 7px;
-    background: -webkit-repeating-linear-gradient(-45deg, #FF8882, #FF8882 2px, #fff 2px, #fff 4px);
-    background: repeating-linear-gradient(-45deg, #FF8882, #FF8882 2px, #fff 2px, #fff 4px);
+    color: #FF8882;
+    border-bottom: 4px dashed #FF8882;
+    ;
 }
