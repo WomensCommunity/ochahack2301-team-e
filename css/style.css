@@ -215,3 +215,34 @@ footer {
     justify-content: space-between;
   }
 }
+
+.sub-title{
+    text-align: center;
+    color: #FF8882;
+    position:relative;
+    width: 43.5%;
+    /* display: flex; */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sub-title:before, .sub-title:after {
+    content: '';
+    top: 50%;
+    position:absolute;
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    background-color: #FF8882;
+  }
+  
+  .sub-title:before {
+    left: 0;
+  }
+  .sub-title:after {
+    right: 0;
+  }
+
+  .intro{
+    text-align: center;
+  }
