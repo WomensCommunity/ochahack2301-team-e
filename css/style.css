@@ -168,7 +168,6 @@ header {
 /*===========================================================*/
 
 footer {
-  /* position: fixed; */
   display: flex;
   left: 0;
   bottom: 0;
@@ -177,6 +176,7 @@ footer {
   width: 100%;
   background: #8090C0;
   font-size: large;
+  justify-content: space-between;
 }
 
 .contact {
@@ -186,8 +186,9 @@ footer {
   padding-left: 30px;
 }
 
-.footer__navi {
-  padding-right: 30px;
+.footer-right {
+  align-items: flex-end;
+  display: flex;
 }
 
 .footer__navi li {
@@ -216,33 +217,35 @@ footer {
   }
 }
 
-.sub-title{
-    text-align: center;
-    color: #FF8882;
-    position:relative;
-    width: 43.5%;
-    /* display: flex; */
-    margin-right: auto;
-    margin-left: auto;
+.sub-title {
+  text-align: center;
+  color: #FF8882;
+  position: relative;
+  width: 43.5%;
+  /* display: flex; */
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.sub-title:before, .sub-title:after {
-    content: '';
-    top: 50%;
-    position:absolute;
-    display: inline-block;
-    width: 50px;
-    height: 1px;
-    background-color: #FF8882;
-  }
-  
-  .sub-title:before {
-    left: 0;
-  }
-  .sub-title:after {
-    right: 0;
-  }
+.sub-title:before,
+.sub-title:after {
+  content: '';
+  top: 50%;
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  background-color: #FF8882;
+}
 
-  .intro{
-    text-align: center;
-  }
+.sub-title:before {
+  left: 0;
+}
+
+.sub-title:after {
+  right: 0;
+}
+
+.intro {
+  text-align: center;
+}
