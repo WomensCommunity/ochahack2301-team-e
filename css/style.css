@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 header {
@@ -15,6 +16,10 @@ header {
 .header-title {
   margin: 20px;
   color: #8090C0;
+}
+
+.main {
+  padding-bottom: 130px;
 }
 
 /*===========================================================*/
@@ -166,6 +171,8 @@ footer {
   position: fixed;
   left: 0;
   bottom: 0;
+  height: 130px;
+  margin-bottom: 0;
   width: 100%;
   background: #8090C0;
   font-size: large;
