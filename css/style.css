@@ -19,7 +19,7 @@ header {
 }
 
 .main {
-  padding-bottom: 130px;
+  padding: 20px;
 }
 
 /*===========================================================*/
@@ -168,7 +168,8 @@ header {
 /*===========================================================*/
 
 footer {
-  position: fixed;
+  /* position: fixed; */
+  display: flex;
   left: 0;
   bottom: 0;
   height: 130px;
