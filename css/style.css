@@ -250,27 +250,29 @@ footer {
 }
 
 .sub-title2 {
-    font-size: 25px;
+  font-size: 25px;
   text-align: center;
   color: #FF8882;
   position: relative;
   width: 50%;
   margin-right: auto;
   margin-left: auto;
-  display:flex;
+  display: flex;
   list-style: none;
   z-index: -1;
-}
-.li2{
-    padding: 0px 50px;
+  justify-content: center;
 }
 
-.li1 span{
-    display: inline-block; 
-    background-color: #FF8882;
-    width: 100px;
-    height:1px;
-    line-height: 2em;
+.li2 {
+  padding: 0px 50px;
+}
+
+.li1 span {
+  display: inline-block;
+  background-color: #FF8882;
+  width: 100px;
+  height: 1px;
+  line-height: 2em;
 }
 
 
@@ -299,18 +301,19 @@ footer {
 
 /*スマホ用*/
 @media screen and (max-width:768px) {
-    .sub-title {
-        /* font-size:10px; */
-        text-align: center;
-        color: #FF8882;
-        position: relative;
-        width: 70%;
-        /* display: flex; */
-        margin-right: auto;
-        margin-left: auto;
-        display:flex;
-      }
-      /*.sub-title:before,
+  .sub-title {
+    /* font-size:10px; */
+    text-align: center;
+    color: #FF8882;
+    position: relative;
+    width: 70%;
+    /* display: flex; */
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+  }
+
+  /*.sub-title:before,
 .sub-title:after {
   content: '';
   top: 50%;
@@ -334,17 +337,17 @@ footer {
   }
 }
 
-li2{
-    padding: 20px;
+li2 {
+  padding: 20px;
 }
 
- span{
-    /* position: absolute; */
-    display: inline-block; 
-    /* justify-content: center; */
-    background-color: #FF8882;
-    width: 100px;
-    height:1px;
-    /* vertical-align: middle; */
-    line-height: 2em;
+span {
+  /* position: absolute; */
+  display: inline-block;
+  /* justify-content: center; */
+  background-color: #FF8882;
+  width: 100px;
+  height: 1px;
+  /* vertical-align: middle; */
+  line-height: 2em;
 }
