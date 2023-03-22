@@ -65,7 +65,7 @@ header {
   z-index: 9999;
   /*ボタンを最前面に*/
   top: 20px;
-  right: 20px;
+  right: 10px;
   cursor: pointer;
   width: 70px;
   height: 70px;
@@ -221,16 +221,20 @@ footer {
   margin-right: 8px;
 }
 
-/* 
-@media (min-width: 599px) {
-  .md-flex {
-    display: flex;
+
+@media (max-width: 830px) {
+  .contact {
+    padding-left: 10px;
   }
 
-  .md-justify-between {
-    justify-content: space-between;
+  .footer-right {
+    padding: 0;
   }
-} */
+
+  .footer-right img {
+    display: none;
+  }
+}
 
 .sub-title {
   text-align: center;
