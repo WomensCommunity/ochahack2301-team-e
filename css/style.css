@@ -246,6 +246,7 @@ footer {
   width: 50%;
   margin-right: auto;
   margin-left: auto;
+  z-index: -1;
 }
 
 .sub-title2 {
@@ -258,6 +259,7 @@ footer {
   margin-left: auto;
   display:flex;
   list-style: none;
+  z-index: -1;
 }
 .li2{
     padding: 0px 50px;
