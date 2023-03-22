@@ -203,7 +203,7 @@ footer {
   display: flex;
 }
 
-.footer__navi {
+.footer__navi ul {
   padding: 0;
 }
 
@@ -260,19 +260,18 @@ footer {
   text-align: center;
   color: #FF8882;
   position: relative;
-  width: 50%;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   display: flex;
   list-style: none;
   z-index: -1;
-  justify-content: space-around;
+  justify-content: center;
   padding: 0;
 }
 
 .li2 {
   padding: 0px 30px;
-  width: 50%;
 }
 
 .li1 span {
@@ -288,18 +287,13 @@ footer {
 }
 
 /*スマホ用*/
-@media screen and (max-width:1120px) {
+@media screen and (max-width:768px) {
 
   .li2 {
-
-    font-size: medium;
+    width: 100%;
   }
 
   .li1 span {
-    display: inline-block;
-    background-color: #FF8882;
-    width: 100px;
-    height: 1px;
-    line-height: 2em;
+    display: none;
   }
 }
