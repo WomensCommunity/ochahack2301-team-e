@@ -19,6 +19,14 @@ header {
   color: #8090C0;
 }
 
+@media screen and (max-width:768px) {
+  .header-title {
+    margin: 0;
+    color: #8090C0;
+    scale: 0.8;
+  }
+}
+
 .main {
   padding: 20px;
 }
@@ -41,6 +49,13 @@ header {
 .sns a:hover {
   opacity: 0.5;
 }
+
+@media screen and (max-width:768px) {
+  .sns a {
+    display: none;
+  }
+}
+
 
 /*===========================================================*/
 /* メニューボタン(3本線が×に) */

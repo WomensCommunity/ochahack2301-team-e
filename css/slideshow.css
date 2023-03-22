@@ -17,16 +17,16 @@
 /*　背景画像設定　*/
 
 .slider-item01 {
-    background:url(../images/girls.jpg);
+    background:url(../images/slideshow/girls.jpg);
     
 }
 
 .slider-item02 {
-    background:url(../images/OchaHack.png);
+    background:url(../images/slideshow/ochahack2301.png);
 }
 
 .slider-item03 {
-    background:url(../images/girls.jpg);
+    background:url(../images/slideshow/OchaHack.png);
 }
 
 .slider-item {
@@ -36,4 +36,29 @@
     background-position: center;/*背景画像の位置を中央に*/
     background-size: cover;/*背景画像が.slider-item全体を覆い表示*/
     padding-left: 0;
+}
+
+@media screen and (max-width:768px){
+    .slider {
+        position:relative;
+        z-index: -1;
+        /*↑z-indexの値をh1のz-indexの値よりも小さくして背景に回す*/
+        width:75%;
+        height: 30vh;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+        border:7px solid #8090C0;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-right:auto;
+        margin-left:auto;
+        padding-left: 0;
+    }
+    .slider-item {
+        width: 75%;/*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
+        height:30vh;/*各スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+        background-repeat: no-repeat;/*背景画像をリピートしない*/
+        background-position: center;/*背景画像の位置を中央に*/
+        background-size: cover;/*背景画像が.slider-item全体を覆い表示*/
+        padding-left: 0;
+    }
+    
 }
