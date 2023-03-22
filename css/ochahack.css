@@ -66,3 +66,22 @@ body {
 ul{
     padding: 0;
 }
+
+
+/*===========================================================*/
+/* Works */
+/*===========================================================*/
+table{
+    border-collapse:collapse;
+    margin: auto;
+}
+th{
+    height: 50px;
+    background-color: #8090C0;
+    color: white;
+    font-weight: bold;
+}
+td{
+    height: 70px;
+    text-align: center;
+}

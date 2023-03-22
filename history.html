@@ -56,17 +56,9 @@
 
             <div class="count">
                 <div class="sub-title">メンバーの増え具合</div>
-                <ul>
-                    <li>452名（2023.03.20現在)</li>
-                    <li>430名（2023.02.28現在）</li>
-                    <li>416名（2022.08.02現在）</li>
-                    <li>415名 (2022.06.22現在）</li>
-                    <li>406名（2022.04.12現在）</li>
-                    <li>393名 (2022.02.25現在）</li>
-                    <li>378名（2022.01.11現在）</li>
-                    <li>351名（2021.10.27現在) </li>
-                    <li>281名（2021.09.21現在）</li>
-                </ul>
+                
+                <canvas id="chart01"></canvas>
+                
             </div>
         </div>
 
@@ -89,10 +81,14 @@
                 </ul>
             </div>
         </footer>
+        
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+        <!--自作のJS-->
+        <script src="js/history.js"></script>
+        <script src="js/script.js"></script>
+        
     </body>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
-
 </html>
