@@ -19,6 +19,14 @@ header {
   color: #8090C0;
 }
 
+@media screen and (max-width:768px) {
+  .header-title {
+    margin: 0;
+    color: #8090C0;
+    scale: 0.8;
+  }
+}
+
 .main {
   padding: 20px;
 }
@@ -42,6 +50,13 @@ header {
   opacity: 0.5;
 }
 
+@media screen and (max-width:768px) {
+  .sns a {
+    display: none;
+  }
+}
+
+
 /*===========================================================*/
 /* メニューボタン(3本線が×に) */
 /*===========================================================*/
@@ -50,7 +65,7 @@ header {
   z-index: 9999;
   /*ボタンを最前面に*/
   top: 20px;
-  right: 20px;
+  right: 10px;
   cursor: pointer;
   width: 70px;
   height: 70px;
@@ -171,7 +186,7 @@ header {
 footer {
   display: flex;
   justify-content: space-between;
-  height: 130px;
+  height: auto;
   width: 100%;
   background: #8090C0;
   font-size: large;
@@ -181,7 +196,7 @@ footer {
   color: #FFF1E0;
   display: flex;
   align-items: flex-end;
-  padding-left: 30px;
+  padding-left: 40px;
 }
 
 .footer-right {
@@ -206,18 +221,25 @@ footer {
   margin-right: 8px;
 }
 
-/* 
-@media (min-width: 599px) {
-  .md-flex {
-    display: flex;
+
+@media (max-width: 830px) {
+  footer {
+    justify-content: center;
+    display: grid;
+    height: auto;
   }
 
-  .md-justify-between {
-    justify-content: space-between;
+  .footer-right li {
+    align-items: start;
   }
-} */
+
+  .footer-right img {
+    display: none;
+  }
+}
 
 .sub-title {
+  font-size: 25px;
   text-align: center;
   color: #FF8882;
   position: relative;
@@ -248,4 +270,41 @@ footer {
 
 .intro {
   text-align: center;
+}
+
+/*スマホ用*/
+@media screen and (max-width:768px) {
+  .sub-title {
+    font-size: 10px;
+    text-align: center;
+    color: #FF8882;
+    position: relative;
+    width: 70%;
+    /* display: flex; */
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .sub-title:before,
+  .sub-title:after {
+    content: '';
+    top: 50%;
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    background-color: #FF8882;
+  }
+
+  .sub-title:before {
+    left: 0;
+  }
+
+  .sub-title:after {
+    right: 0;
+  }
+
+  .intro {
+    text-align: center;
+  }
 }
