@@ -21,11 +21,11 @@ header {
 
 @media screen and (max-width:768px) {
   .header-title {
-    scale: 0.75;
+    text-align: left;
     color: #8090C0;
   }
-
 }
+
 
 .main {
   padding: 20px;
