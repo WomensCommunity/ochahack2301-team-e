@@ -202,7 +202,7 @@ footer {
 .footer-right {
   align-items: flex-end;
   display: flex;
-  padding-right: 30px;
+  padding-right: 20px;
 }
 
 .footer__navi li {
@@ -224,10 +224,9 @@ footer {
 
 @media (max-width: 830px) {
   footer {
-    justify-content: start;
+    justify-content: center;
     display: grid;
     height: auto;
-    padding: 10px;
   }
 
   .footer-right li {
