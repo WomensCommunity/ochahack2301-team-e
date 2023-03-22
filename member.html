@@ -39,7 +39,9 @@
       <h1 class="member-title">どんなメンバーがいるの？</h1>
 
       <h2 class="sub-member-title">何人入っているの？</h2>
-      452名（2023.3.20現在）
+        <div id="box1" class="box"><!--画面に入ったら数字を動かす基点にするためのid を付与-->
+          <p><br><span class="count-up count-size">452</span>人(2023.03.22現在)</p><!-- count-up ← カウントアップ用class名-->
+          <!--/box--></div>
 
       <h2 class="sub-member-title">入っている人の属性</h2>
       <ul>
@@ -100,6 +102,10 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+    <!--自作のJS-->
+    <script src="js/member.js"></script>
   </body>
 
 </html>
