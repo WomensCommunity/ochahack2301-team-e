@@ -52,7 +52,7 @@ header {
 
 @media screen and (max-width:768px) {
   .sns a {
-    opacity: 0;
+    display: none;
   }
 }
 
