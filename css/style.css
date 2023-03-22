@@ -196,13 +196,15 @@ footer {
   color: #FFF1E0;
   display: flex;
   align-items: flex-end;
-  padding-left: 40px;
 }
 
 .footer-right {
   align-items: flex-end;
   display: flex;
-  padding-right: 20px;
+}
+
+.footer__navi {
+  padding: 0;
 }
 
 .footer__navi li {
@@ -238,10 +240,6 @@ footer {
   }
 }
 
-/*===========================================================*/
-/* トップページ タイトル */
-/*===========================================================*/
-
 .sub-title {
   font-size: 25px;
   text-align: center;
@@ -252,6 +250,10 @@ footer {
   margin-left: auto;
   z-index: -1;
 }
+
+/*===========================================================*/
+/* トップページ */
+/*===========================================================*/
 
 .top-sub-title {
   font-size: 25px;
@@ -264,11 +266,13 @@ footer {
   display: flex;
   list-style: none;
   z-index: -1;
-  justify-content: center;
+  justify-content: space-around;
+  padding: 0;
 }
 
 .li2 {
-  padding: 0px 50px;
+  padding: 0px 30px;
+  width: 50%;
 }
 
 .li1 span {
@@ -284,17 +288,17 @@ footer {
 }
 
 /*スマホ用*/
-@media screen and (max-width:768px) {
+@media screen and (max-width:1120px) {
 
   .li2 {
-    padding: 0px 20px;
-    scale: 0.7;
+
+    font-size: medium;
   }
 
   .li1 span {
     display: inline-block;
     background-color: #FF8882;
-    width: 50px;
+    width: 100px;
     height: 1px;
     line-height: 2em;
   }
