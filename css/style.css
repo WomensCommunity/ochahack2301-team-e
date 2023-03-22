@@ -186,7 +186,7 @@ header {
 footer {
   display: flex;
   justify-content: space-between;
-  height: 130px;
+  height: auto;
   width: 100%;
   background: #8090C0;
   font-size: large;
@@ -196,7 +196,7 @@ footer {
   color: #FFF1E0;
   display: flex;
   align-items: flex-end;
-  padding-left: 30px;
+  padding-left: 40px;
 }
 
 .footer-right {
@@ -223,12 +223,14 @@ footer {
 
 
 @media (max-width: 830px) {
-  .contact {
-    padding-left: 10px;
+  footer {
+    justify-content: center;
+    display: grid;
+    height: auto;
   }
 
-  .footer-right {
-    padding: 0;
+  .footer-right li {
+    align-items: start;
   }
 
   .footer-right img {
@@ -237,7 +239,7 @@ footer {
 }
 
 .sub-title {
-    font-size: 25px;
+  font-size: 25px;
   text-align: center;
   color: #FF8882;
   position: relative;
@@ -272,36 +274,37 @@ footer {
 
 /*スマホ用*/
 @media screen and (max-width:768px) {
-    .sub-title {
-        font-size:10px;
-        text-align: center;
-        color: #FF8882;
-        position: relative;
-        width: 70%;
-        /* display: flex; */
-        margin-right: auto;
-        margin-left: auto;
-      }
-      .sub-title:before,
-.sub-title:after {
-  content: '';
-  top: 50%;
-  position: absolute;
-  display: inline-block;
-  width: 50px;
-  height: 1px;
-  background-color: #FF8882;
-}
+  .sub-title {
+    font-size: 10px;
+    text-align: center;
+    color: #FF8882;
+    position: relative;
+    width: 70%;
+    /* display: flex; */
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-.sub-title:before {
-  left: 0;
-}
+  .sub-title:before,
+  .sub-title:after {
+    content: '';
+    top: 50%;
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    background-color: #FF8882;
+  }
 
-.sub-title:after {
-  right: 0;
-}
+  .sub-title:before {
+    left: 0;
+  }
 
-.intro {
-  text-align: center;
-}
+  .sub-title:after {
+    right: 0;
+  }
+
+  .intro {
+    text-align: center;
+  }
 }
