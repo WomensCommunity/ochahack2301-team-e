@@ -6,6 +6,7 @@
 
 .activity ul {
     list-style-type: none;
+    padding: 0;
     /* background: linear-gradient(#8090C0, #FFF1E0); */
 }
 
@@ -15,8 +16,10 @@
     border-top: #8090C0 1px solid;
 }
 
-.activity img {
-    width: 100%;
+@media screen and (max-width:768px) {
+    .activity img {
+        width: 100%;
+    }
 }
 
 .count ul {
