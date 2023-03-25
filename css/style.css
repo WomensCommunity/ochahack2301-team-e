@@ -1,7 +1,15 @@
+/*===========================================================*/
+/* 全体の設定 */
+/*===========================================================*/
+
 body {
   margin: 0;
   padding: 0;
   height: 100%;
+}
+
+.main {
+  padding: 20px;
 }
 
 header {
@@ -27,9 +35,6 @@ header {
   }
 }
 
-.main {
-  padding: 20px;
-}
 
 /*===========================================================*/
 /* SNS アイコン */
@@ -153,6 +158,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 0;
 }
 
 /*リストのレイアウト設定*/
@@ -196,13 +202,15 @@ footer {
   color: #FFF1E0;
   display: flex;
   align-items: flex-end;
-  padding-left: 40px;
 }
 
 .footer-right {
   align-items: flex-end;
   display: flex;
-  padding-right: 20px;
+}
+
+.footer__navi {
+  padding: 0;
 }
 
 .footer__navi li {
@@ -243,29 +251,41 @@ footer {
   text-align: center;
   color: #FF8882;
   position: relative;
-  width: 43.5%;
-  /* display: flex; */
+  width: 50%;
   margin-right: auto;
   margin-left: auto;
+  z-index: -1;
 }
 
-.sub-title:before,
-.sub-title:after {
-  content: '';
-  top: 50%;
-  position: absolute;
+/*===========================================================*/
+/* トップページ */
+/*===========================================================*/
+
+.top-sub-title {
+  font-size: 25px;
+  text-align: center;
+  color: #FF8882;
+  position: relative;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  list-style: none;
+  z-index: -1;
+  justify-content: center;
+  padding: 0;
+}
+
+.li2 {
+  padding: 0px 30px;
+}
+
+.li1 span {
   display: inline-block;
-  width: 50px;
-  height: 1px;
   background-color: #FF8882;
-}
-
-.sub-title:before {
-  left: 0;
-}
-
-.sub-title:after {
-  right: 0;
+  width: 100px;
+  height: 1px;
+  line-height: 2em;
 }
 
 .intro {
@@ -274,37 +294,12 @@ footer {
 
 /*スマホ用*/
 @media screen and (max-width:768px) {
-  .sub-title {
-    font-size: 10px;
-    text-align: center;
-    color: #FF8882;
-    position: relative;
-    width: 70%;
-    /* display: flex; */
-    margin-right: auto;
-    margin-left: auto;
+
+  .li2 {
+    width: 100%;
   }
 
-  .sub-title:before,
-  .sub-title:after {
-    content: '';
-    top: 50%;
-    position: absolute;
-    display: inline-block;
-    width: 50px;
-    height: 1px;
-    background-color: #FF8882;
-  }
-
-  .sub-title:before {
-    left: 0;
-  }
-
-  .sub-title:after {
-    right: 0;
-  }
-
-  .intro {
-    text-align: center;
+  .li1 span {
+    display: none;
   }
 }
