@@ -42,8 +42,8 @@
 } */
 
 .detail-date {
-    width: 220px;
-    margin-right: 30px;
+    width: 40%;
+    margin-right: 10px;
     color: #8090C0;
     line-height: 3.0;
 }
@@ -63,8 +63,9 @@ ul {
 
 /* スマホ用 */
 @media screen and (max-width:1060px) {
-    .detail-date {
-        margin-right: 10px;
+
+    .news-list li {
+        display: block;
     }
 }
 
