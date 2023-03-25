@@ -71,9 +71,10 @@ ul{
 /*===========================================================*/
 /* Works */
 /*===========================================================*/
-table{
+/* table{
     border-collapse:collapse;
     margin: auto;
+    width: 100%;
 }
 th{
     height: 50px;
@@ -84,4 +85,58 @@ th{
 td{
     height: 70px;
     text-align: center;
+} */
+
+.m-title{
+    /* margin: 0px; */
+    /* padding: 0px 20px 0px 20px; */
+    /* justify-content: space-between; */
+    /* align-items:stretch;  */
+    display: flex;
+    text-align: center;
+    background-color: #8090C0;
+    color: white;
+    font-weight: bold;
 }
+.d{
+    display: flex;
+    text-align: center;
+    /* justify-content: space-between; */
+    /* align-items:stretch;  */
+    border-bottom: #8090C0 1px solid;
+    border-right: #8090C0 1px solid;
+    border-left: #8090C0 1px solid;
+    /* padding: 10px 20px 10px 20px; */
+}
+#m1{
+    width: 30%;
+}
+
+#m2{
+    width: 30%;
+}
+#m3{
+    width: 40%;
+}
+
+
+.js-based{
+    display: none;
+}
+.product-item{
+    list-style: none;
+}
+.product-list{
+    margin: 0px;
+}
+
+/* .work-date{
+    width:30%;
+}
+.team{
+    width:30%;
+}
+.name{
+    width:40%;
+} */
+

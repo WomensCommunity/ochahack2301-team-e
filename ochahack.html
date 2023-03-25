@@ -9,6 +9,8 @@
 
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/ochahack.css">
+
+        <script src="js/samp.js"></script>
     </head>
 
     <body>
@@ -36,7 +38,7 @@
         </header>
 
         <div class="main-header">
-            <img src="images/ochahack/TW-head1.gif" alt="Twitterのヘッダー" width="100%">
+            <img src="images/ochahack/TW-head1.gif" alt="Twitterのヘッダー" width="80%">
         </div>
 
         <div class="main">
@@ -70,29 +72,48 @@
             <div class="works">
                 <div class="sub-title">過去参加者の作品</div>
                 <div class="record">
-                <table border="1" bordercolor="#8090C0">
+                </div>
+
+                <div class="m-title">
+                    <p width="20%" id="m1">作成日</p>
+                    <p width="20%" id="m2">チーム名</p>
+                    <p width="30%" id="m3">URL</p>
+                </div>
+
+                <!-- <table border="1" bordercolor="#8090C0">
                     <tr>
                         <th width="20%">作成日</th>
                         <th width="20%">チーム名</th>
-                        <th width="40%">URL</th>
-                    </tr>
-                    <tr>
-                        <td height="20%">2023/3/22 第一回OchaHack</td>
-                        <td height="20%">Women's Community</td>
-                        <td height="20%"><a href="https://womenscommunity.netlify.app/index.html">Women's Community 公式HP</a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
-                </div>
+                        <th width="30%">URL</th>
+                        <th width="30%">Github</th>
+                    </tr> -->
+
+                <section class="product">
+                    <div class="inner-block">
+                    <ul class="product-list">
+                        <li class="product-item js-based">
+                            <div class="product-data">
+                                <div class="colors">
+                                    <div class="color js-based" color="white">
+                                    </div>
+                                </div>
+                                <div class="d">
+                                    <div id="m1"><p class="work-date"></p></div>
+                                    <div id="m2"><a href="/" id="git-url"><p class="team"></p></a></div>
+                                    <div id="m3"><a href="/" id="name-url"><p class="name"></p></a></div>
+                                </div>
+                                <!-- <a href="/" id="git-url"><p class="git"></p></a> -->
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+                </section>
+                <!-- </table> -->
             </div>
+
         </div>
 
         <footer>
-            <!-- class="md-flex md-justify-between" -->
             <div class="contact">
                 <p>問い合わせ先<br>
                     womens.community.info(at)gmail.com</p>
