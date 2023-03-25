@@ -5,21 +5,11 @@
 */
 
 /*===========================================================*/
-/* 全体の設定 */
-/*===========================================================*/
-body {
-    margin: 0;
-    padding: 0;
-}
-.main{
-    margin:3%;
-}
-
-/*===========================================================*/
 /* タイトル系 */
 /*===========================================================*/
-.sub-title{
-    color:#8090C0;
+.sub-title {
+    width: 75%;
+    color: #8090C0;
     font-weight: bold;
     font-size: 1.5em;
     padding: 30px 50px 0px 0px;
@@ -27,8 +17,8 @@ body {
     z-index: -1;
 }
 
-.date{
-    color:#8090C0;
+.date {
+    color: #8090C0;
     font-weight: bold;
     font-size: 1.0em;
     border-bottom: #8090C0 3px solid;
@@ -37,7 +27,7 @@ body {
 /*===========================================================*/
 /* 中身のヘッダー */
 /*===========================================================*/
-.main-header{
+.main-header {
     background-color: #8090C0;
     text-align: center;
 }
@@ -46,25 +36,36 @@ body {
 /* 中身 */
 /*===========================================================*/
 
-.detail{
+/* .news-list {
     display: flex;
     justify-content: space-between;
-}
-.detail-date{
-    width: 40%;
+} */
+
+.detail-date {
+    width: 220px;
+    margin-right: 30px;
     color: #8090C0;
     line-height: 3.0;
 }
-.detail-intro{
+
+.detail-intro {
     line-height: 3.0;
 }
-.news-list li{
+
+.news-list li {
     display: flex;
-    justify-content: space-between;
     border-bottom: #8090C0 3px solid;
 }
-ul{
+
+ul {
     padding: 0;
+}
+
+/* スマホ用 */
+@media screen and (max-width:1060px) {
+    .detail-date {
+        margin-right: 10px;
+    }
 }
 
 
@@ -87,7 +88,7 @@ td{
     text-align: center;
 } */
 
-.m-title{
+.m-title {
     /* margin: 0px; */
     /* padding: 0px 20px 0px 20px; */
     /* justify-content: space-between; */
@@ -98,7 +99,8 @@ td{
     color: white;
     font-weight: bold;
 }
-.d{
+
+.d {
     display: flex;
     text-align: center;
     /* justify-content: space-between; */
@@ -108,25 +110,29 @@ td{
     border-left: #8090C0 1px solid;
     /* padding: 10px 20px 10px 20px; */
 }
-#m1{
+
+#m1 {
     width: 30%;
 }
 
-#m2{
+#m2 {
     width: 30%;
 }
-#m3{
+
+#m3 {
     width: 40%;
 }
 
 
-.js-based{
+.js-based {
     display: none;
 }
-.product-item{
+
+.product-item {
     list-style: none;
 }
-.product-list{
+
+.product-list {
     margin: 0px;
 }
 
@@ -139,4 +145,3 @@ td{
 .name{
     width:40%;
 } */
-
